@@ -1,0 +1,264 @@
+@import 'utilities.css';
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+header {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 89%, 0% 120%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+.logo {
+    margin-right: 3rem;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+.hero .left2 img {
+    width: 400px;
+}
+
+.hero .right2 {
+    color: var(--pure);
+
+}
+
+.hero .right2 h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right2 h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.hero .right2 h1 span {
+    color: var(--primary);
+}
+
+.hero .right2 p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .left2 {
+    justify-content: center;
+}
+
+.hero {
+    padding: 3rem 0;
+
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section.about .container .myimg {
+    height: 450px;
+}
+
+section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span {
+    color: var(--primary);
+}
+
+section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+section.about p {
+    color: var(--ternary);
+    line-height: 1.9;
+    font-family: 'Cinzel', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    margin-bottom: 2rem;
+}
+section.about .social
+{
+    display: flex;
+
+}
+section.about .social .bi
+{
+    
+    border-radius: 50px;
+    background: var(--pure );
+    width: 35px;
+    height: 35px;
+    margin-right: 0.6rem;
+    z-index: 10;
+    border: solid var(--dark);
+    text-align: center;
+    position: relative;
+    
+}
+.bi{
+    padding: 0.5rem;
+}
+
+section.about .social .bi:hover
+{
+    background: var(--primary);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.service .cardwrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.service
+{
+    background: var(--light);
+    padding: 3rem auto;
+}
+.service h3 , h1 ,p{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.service h1 span{
+    color: var(--primary);
+}
+.service .cardwrapper .card
+{
+    background: var(--pure);
+    margin: 3rem 3rem;
+    height: 12rem;
+    width: 20rem;
+    padding: 2rem 2rem;
+    position: relative;
+}
+.service .cardwrapper .card img
+{
+    position: absolute;
+    background: var(--primary);
+    padding: 1rem 1rem;
+    top: -45;
+    right: 50%;
+    transform: translateX(50%);
+    
+}
+.cardholder
+{
+    margin-top: 2rem;
+}
+
+.service .cardwrapper .card:hover
+{
+    background-color: var(--dark);
+    border: solid var(--dark);
+    color: var(--pure);
+    transition: ease 0.1s;
+    cursor: pointer;
+   
+}
+.free button
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  
+}
+.free{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/backh.jpg);
+    width: 100%;
+    color: var(--pure);
+    margin: 0 0 3rem 0;
+    clip-path: polygon(0 0,100% 0, 100% 100%,80% 70%,0 100%);
+}
+section.contact .card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper img
+{
+    margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card h2{
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary );
+}
+.contact-box
+{
+    margin-bottom: 5rem;
+    
+}
+.contact-box h1{
+    font-size: xx-large;
+}
+footer
+{
+    background:rgb(72, 72, 72);
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer-logo
+{
+    margin-bottom: 3rem;   
+}
+.footer-socials a img{
+    margin-right: 5rem;
+    text-align: center;
+
+}
+.footer-socials
+
+{
+    position: relative;
+    left: 40px;
+}
